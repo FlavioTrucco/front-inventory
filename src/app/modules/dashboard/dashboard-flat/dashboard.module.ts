@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardFlatComponent } from '../pages/dashboard-flat/dashboard-flat.component';
 import { HomeComponent } from '../components/home/home.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../../shared/shared.module';
 
 
 
@@ -12,7 +13,8 @@ import { RouterModule } from '@angular/router';
     HomeComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ]
 })
 export class DashboardFlatModule { }

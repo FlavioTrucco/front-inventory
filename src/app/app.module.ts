@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardFlatComponent } from './modules/dashboard/pages/dashboard-flat/dashboard-flat.component';
 import { HomeComponent } from './modules/dashboard/components/home/home.component';
 import { DashboardFlatModule } from './modules/dashboard/dashboard-flat/dashboard.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DashboardFlatModule } from './modules/dashboard/dashboard-flat/dashboar
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DashboardFlatModule
+    DashboardFlatModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
